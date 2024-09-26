@@ -82,6 +82,12 @@ nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_ID -c CONFIGURATION
 nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_ID -c CONFIGURATION -f all -tr nnUNetTrainerUMambaEnc --disable_tta
 ```
 
+## Evaluate Predictions
+
+```
+nnUNetv2_evaluate_simple gt_folder TEST_GT_FOLDER pred_folder OUTPUT_FOLDER -l 0 1 2 ...
+```
+
 > `CONFIGURATION` can be `2d` and `3d_fullres` for 2D and 3D models, respectively.
 
 ## Remarks
